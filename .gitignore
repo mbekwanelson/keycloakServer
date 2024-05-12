@@ -55,3 +55,7 @@ dkms.conf
 /RestWebApi/obj
 /ConsoleApplication/obj
 /.vs
+/RestWebApi/bin/Debug/net8.0
+/RestWebApi/RestWebApi.csproj.user
+/RestWebApi/.vs
+/ConsoleApplication/bin

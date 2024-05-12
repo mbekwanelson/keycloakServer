@@ -20,10 +20,10 @@ namespace ConsoleApplication.Services
         {
             var clientCredentials = new FormUrlEncodedContent(new[]
             {
-            new KeyValuePair<string, string>("grant_type", "client_credentials"),
-            new KeyValuePair<string, string>("client_id", clientId),
-            new KeyValuePair<string, string>("client_secret", clientSecret),
-        });
+                new KeyValuePair<string, string>("grant_type", "client_credentials"),
+                new KeyValuePair<string, string>("client_id", clientId),
+                new KeyValuePair<string, string>("client_secret", clientSecret),
+            });
 
             var response = await _httpClient.PostAsync(tokenEndpointUri, clientCredentials);
             response.EnsureSuccessStatusCode();
