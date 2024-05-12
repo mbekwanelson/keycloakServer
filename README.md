@@ -16,10 +16,12 @@ Console Application:
 
 Keycloak Server (Docker):
     
-    -  Issues tockens
+    -  Issues access tokens
     -  Registers Clients
+    -  Started up with command docker run -p 8080:8080 -e KEYCLOAK_ADMIN_PASSWORD=adminP keycloak-server
 
 Web Api:
 
+    - registered on keycloak as a client 
     - Protected by Keycloak
     - Gives Data from endpoints only to authorised Requests or clients
